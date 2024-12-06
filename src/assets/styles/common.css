@@ -1,0 +1,37 @@
+@import 'variables.css';
+
+@font-face {
+  font-family: 'DroneRangerPro';
+  src: url('../fonts/drone-ranger-pro.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter' !important;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  background: var(--primary-color);
+  border: none;
+  font-weight: bold;
+  font-family: 'Inter' !important;
+  transition: none;
+
+  &:hover {
+    background-color: #d81b60 !important;
+  }
+}

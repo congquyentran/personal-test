@@ -1,0 +1,94 @@
+@import './variables.css';
+
+.App-banner {
+  width: 100vw;
+  height: auto;
+}
+
+.header-container {
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(23, 22, 26, 0.7);
+  height: 84px;
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  top: 0;
+
+  .header-nav {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  .header-actions {
+    gap: 20px;
+    display: flex;
+    flex-basis: 30%;
+    justify-content: flex-end;
+
+    .header-language {
+      display: flex;
+    }
+  }
+}
+
+.menu {
+  width: 100%;
+  background: transparent;
+  border: none;
+  font-size: 0.875rem;
+  height: 32px;
+
+  .ant-menu-item {
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'DroneRangerPro';
+
+    &:hover {
+      color: #da458f !important;
+
+      &::after {
+        width: 15%;
+        margin-left: 8px;
+        border-bottom-color: #da458f !important;
+      }
+    }
+
+    &::after {
+      transition: none !important;
+    }
+  }
+
+  .ant-menu-item-selected {
+    background: -webkit-linear-gradient(91.47deg, #da458f -6%, #da34dd 113.05%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    &:hover {
+      -webkit-text-fill-color: #da458f;
+    }
+
+    &::after {
+      width: 15%;
+      margin-left: 8px;
+      border-bottom-color: #da458f !important;
+    }
+  }
+
+  .market-place {
+    padding-right: 4px;
+  }
+
+  .roadmap {
+    padding-left: 4px;
+  }
+}
